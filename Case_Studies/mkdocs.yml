@@ -1,0 +1,20 @@
+site_name: System Design — AI Edition
+site_description: Exploring AI-first architectures, LLM integration, and intelligent system design
+
+nav:
+  - Home: ../README.md
+  - Case Studies:
+      - ChatGPT:
+          - Approach: ChatGPT/ChatGPT_A.md
+          - Alternate Approach: ChatGPT/ChatGPT_ALT.md
+          - Reasoning: ChatGPT/ChatGPT_R.md
+      - Google Live:
+          - Google_live_A.md: Google_live/Google_live_A.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
