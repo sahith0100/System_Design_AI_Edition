@@ -18,3 +18,6 @@ Privacy, ethics, and cost-aware architecture
 
 Real-world case studies and reference architectures (e.g. AI copilots, recommendation engines, RAG systems)
 
+file_name_+"Approach"
+file_name_+"Alternate_Approach"
+file_name_+"Reasoning for both Approaches"
