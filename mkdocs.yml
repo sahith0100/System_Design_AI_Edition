@@ -1,11 +1,11 @@
 site_name: System Design — AI Edition
 site_description: Exploring AI-first architectures, LLM integration, and intelligent system design patterns for modern applications
-site_author: Your Name
+site_author: Sahith 
 site_url: https://yourdomain.com
 
 # Repository information (optional - for "Edit this page" links)
-repo_name: your-username/System_Design_AI_Edition
-repo_url: https://github.com/your-username/System_Design_AI_Edition
+repo_name: sahith0100/System_Design_AI_Edition
+repo_url: https://github.com/sahith0100/System_Design_AI_Edition
 edit_uri: edit/main/docs/
 
 nav:
