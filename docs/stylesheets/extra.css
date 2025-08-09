@@ -1,0 +1,125 @@
+/* Readability and layout improvements for MkDocs Read the Docs theme */
+:root {
+  --content-width: 1100px;
+  --text-color: #111827; /* gray-900 */
+  --muted-color: #6b7280; /* gray-500 */
+  --border-color: #e5e7eb; /* gray-200 */
+  --code-bg: #f8fafc; /* gray-50 */
+  --inline-code-bg: #f3f4f6; /* gray-100 */
+  --link-color: #2563eb; /* blue-600 */
+  --link-hover: #1d4ed8; /* blue-700 */
+}
+
+/* Dark mode tweaks (best-effort without JS) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #e5e7eb; /* gray-200 */
+    --muted-color: #9ca3af; /* gray-400 */
+    --border-color: #374151; /* gray-700 */
+    --code-bg: #0b1220;
+    --inline-code-bg: #111827;
+    --link-color: #60a5fa; /* blue-300 */
+    --link-hover: #93c5fd; /* blue-300 */
+  }
+}
+
+/* Widen main content */
+.wy-nav-content {
+  max-width: var(--content-width);
+}
+
+/* Base typography */
+.wy-nav-content, .rst-content {
+  color: var(--text-color);
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+
+.rst-content h1, .rst-content h2, .rst-content h3, .rst-content h4 {
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.rst-content h1 { margin-top: 0.2rem; margin-bottom: 1.0rem; font-size: 2.0rem; }
+.rst-content h2 { margin-top: 2.0rem; margin-bottom: 0.75rem; font-size: 1.6rem; }
+.rst-content h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.3rem; }
+
+/* Anchor links on headings */
+.rst-content .headerlink {
+  opacity: 0.4;
+  margin-left: 0.25rem;
+}
+.rst-content h1:hover .headerlink,
+.rst-content h2:hover .headerlink,
+.rst-content h3:hover .headerlink,
+.rst-content h4:hover .headerlink { opacity: 1; }
+
+/* Paragraph and list spacing */
+.rst-content p { margin: 0.6rem 0 0.9rem; }
+.rst-content ul, .rst-content ol { margin: 0.4rem 0 1.0rem; }
+
+/* Links */
+.rst-content a { color: var(--link-color); text-decoration: none; }
+.rst-content a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Inline code */
+.rst-content code, .rst-content tt {
+  background: var(--inline-code-bg);
+  border: 1px solid var(--border-color);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* Code blocks */
+.rst-content pre, .rst-content div[class^="highlight"] pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* Tables */
+.rst-content table.docutils {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+.rst-content table.docutils th,
+.rst-content table.docutils td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 0.75rem;
+}
+.rst-content table.docutils th { background: var(--inline-code-bg); }
+
+/* Admonitions */
+.admonition {
+  border: 1px solid var(--border-color);
+  border-left-width: 4px;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+.admonition > .admonition-title { font-weight: 700; }
+
+/* Blockquotes */
+.rst-content blockquote {
+  color: var(--muted-color);
+  border-left: 4px solid var(--border-color);
+  margin: 1rem 0;
+  padding: 0.1rem 1rem;
+}
+
+/* Images */
+.rst-content img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+/* Horizontal rule */
+.rst-content hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }

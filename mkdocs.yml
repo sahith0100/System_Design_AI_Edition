@@ -1,0 +1,62 @@
+site_name: System Design — AI Edition
+site_description: Exploring AI-first architectures, LLM integration, and intelligent system design patterns for modern applications
+site_author: Your Name
+site_url: https://yourdomain.com
+
+# Repository information (optional - for "Edit this page" links)
+repo_name: your-username/System_Design_AI_Edition
+repo_url: https://github.com/your-username/System_Design_AI_Edition
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: introduction.md
+      - Fundamentals: fundamentals.md
+  - Case Studies:
+      - ChatGPT Architecture:
+          - Main Architecture: Case_Studies/ChatGPT/ChatGPT_A.md
+          - Alternative Approach: Case_Studies/ChatGPT/ChatGPT_ALT.md
+          - Design Reasoning: Case_Studies/ChatGPT/ChatGPT_R.md
+          - Implementation Details: Case_Studies/ChatGPT/implementation.md
+      - Google Live Search:
+          - Architecture Overview: Case_Studies/Google_live/Google_live_A.md
+          - Real-time Components: Case_Studies/Google_live/realtime.md
+          - Scaling Strategies: Case_Studies/Google_live/scaling.md
+  - Design Patterns:
+      - AI Integration Patterns: Case_Studies/patterns/ai-integration.md
+      - Microservices for AI: Case_Studies/patterns/microservices-ai.md
+      - Data Pipeline Patterns: Case_Studies/patterns/data-pipelines.md
+  - Resources:
+      - Glossary: Case_Studies/resources/glossary.md
+      - Tools & Technologies: Case_Studies/resources/tools.md
+      - Further Reading: Case_Studies/resources/reading.md
+  - About: about.md
+
+theme:
+  name: readthedocs
+
+# Extensions (simplified - only the ones that work without extra packages)
+markdown_extensions:
+  # Python Markdown
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+
+  
+# Plugins (only basic search for now)
+plugins:
+  - search:
+      lang: en
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Copyright
+copyright: Copyright &copy; 2025 Sahith
